@@ -1,0 +1,97 @@
+/* styles.css */
+
+/* Global Styles */
+body {
+    background-color: #f9f9f9;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Center and style the main container */
+  main {
+    max-width: 600px;
+    margin: 40px auto;
+    background-color: #ffffff;
+    padding: 20px 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Headings and Paragraphs */
+  h1 {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #555;
+  }
+  
+  /* Form element styling */
+  form div {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="number"],
+  select,
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  /* Styling fieldsets and legends */
+  fieldset {
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 10px 15px;
+  }
+  
+  legend {
+    font-weight: bold;
+    padding: 0 5px;
+  }
+  
+  /* Allow vertical resizing for textarea */
+  textarea {
+    resize: vertical;
+    min-height: 80px;
+  }
+  
+  /* Button styles with hover effect */
+  button[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background-color: #007BFF;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Optional: Style radio and checkbox inputs for spacing */
+  input[type="radio"],
+  input[type="checkbox"] {
+    margin-right: 5px;
+  }
