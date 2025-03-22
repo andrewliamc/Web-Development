@@ -1,70 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Survey Form</title>
-  </head>
 
-  <body>
-    <header>
-      <h1 id="title">Employee Satisfaction Survey</h1>
-      <p id=description>Thank you for taking the time to fill out our survey. We appreciate your feedback.</p>
-    </header>
+<head>
+  <meta charset="UTF-8" />
+  <title>Survey Form</title>
+</head>
 
-    <main>
-      <form id="survey-form">
-        <div>
-          <label for="name" id="name-label">Name</label>
-          <input type="text" id="name" placeholder="Enter your name" required>
-        </div>
-        <div>
-          <label for="email" id="email-label">Email</label>
-          <input type="email" id="email" placeholder="Enter your email" required>
-        </div>
-        <div>
-          <label for="number" id="number-label">Age</label>
-          <input type="number" id="number" placeholder="Age" min="14" max="100">
-        </div>
-        <br>
-        <div>
-          <label for="dropdown">What is your overall satisfaction with the company?</label>
-          <select name="dropdown" id="dropdown">
-            <option value="poor">Poor</option>
-            <option value="satisfactory">Satisfactory</option>
-            <option value="good">Good</option>
-            <option value="very-good">Very Good</option>
-            <option selected value="excellent">Excellent</option>
-          </select>
-        </div> 
-        <br>
-        <!-- RADIO BUTTONS -->
-        <div>
-          <fieldset>
-            <legend>Would you recommend working here to a friend?</legend>
-            <label><input type="radio" name="recommend" value="very likely">Very likely</label>
-            <label><input type="radio" name="recommend" value="unsure">Unsure</label>
-            <label><input type="radio" name="recommend" value="very unlikely">Very unlikely</label>
-          </fieldset>
-        </div>
-        <br>
-        <!-- CHECK BOX -->
+<body>
+  <header>
+    <h1 id="title">Employee Satisfaction Survey</h1>
+    <p id=description>Thank you for taking the time to fill out our survey. We appreciate your feedback.</p>
+  </header>
+
+  <main>
+    <form id="survey-form">
+      <div>
+        <label for="name" id="name-label">Name</label>
+        <input type="text" id="name" placeholder="Enter your name" required>
+      </div>
+      <div>
+        <label for="email" id="email-label">Email</label>
+        <input type="email" id="email" placeholder="Enter your email" required>
+      </div>
+      <div>
+        <label for="number" id="number-label">Age</label>
+        <input type="number" id="number" placeholder="Age" min="14" max="100">
+      </div>
+      <br>
+      <div>
+        <label for="dropdown">What is your overall satisfaction with the company?</label>
+        <select name="dropdown" id="dropdown">
+          <option value="poor">Poor</option>
+          <option value="satisfactory">Satisfactory</option>
+          <option value="good">Good</option>
+          <option value="very-good">Very Good</option>
+          <option selected value="excellent">Excellent</option>
+        </select>
+      </div>
+      <br>
+      <!-- RADIO BUTTONS -->
+      <div>
         <fieldset>
-          <legend>Why would you recommend working here?</legend>
-          <label><input type="checkbox" name="why-recommend" value="compensation">Compensation</label>
-          <label><input type="checkbox" name="why-recommend" value="flexibility">Flexibility</label>
-          <label><input type="checkbox" name="why-recommend" value="development">Growth & Development</label>
-          <label><input type="checkbox" name="why-recommend" value="benefits">Benefits</label>
-          <label><input type="checkbox" name="why-recommend" value="culture">Culture</label>
+          <legend>Would you recommend working here to a friend?</legend>
+          <label><input type="radio" name="recommend" value="very likely">Very likely</label>
+          <label><input type="radio" name="recommend" value="unsure">Unsure</label>
+          <label><input type="radio" name="recommend" value="very unlikely">Very unlikely</label>
         </fieldset>
+      </div>
+      <br>
+      <!-- CHECK BOX -->
+      <fieldset>
+        <legend>Why would you recommend working here?</legend>
+        <label><input type="checkbox" name="why-recommend" value="compensation">Compensation</label>
+        <label><input type="checkbox" name="why-recommend" value="flexibility">Flexibility</label>
+        <label><input type="checkbox" name="why-recommend" value="development">Growth & Development</label>
+        <label><input type="checkbox" name="why-recommend" value="benefits">Benefits</label>
+        <label><input type="checkbox" name="why-recommend" value="culture">Culture</label>
+      </fieldset>
+      <br>
+      <!-- COMMENT BOX -->
+      <div>
+        <label for="comments">Any additional comments?</label>
         <br>
-        <!-- COMMENT BOX -->
-        <div>
-          <label for="comments">Any additional comments?</label>
-          <br>
-          <textarea cols="50" rows="20" name="comments"></textarea>
-        </div>
-        <button type="submit" id="submit">Submit</button>
-      </form>
-    </main>
-  </body>
+        <textarea cols="50" rows="20" name="comments"></textarea>
+      </div>
+      <button type="submit" id="submit">Submit</button>
+    </form>
+  </main>
+</body>
+
 </html>
