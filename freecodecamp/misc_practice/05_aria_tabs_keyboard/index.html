@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Accessible ARIA Tabs</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div role="tablist" aria-label="Sample Tabs">
+    <button role="tab" id="tab1" aria-controls="panel1" aria-selected="true" tabindex="0">Tab 1</button>
+    <button role="tab" id="tab2" aria-controls="panel2" aria-selected="false" tabindex="-1">Tab 2</button>
+    <button role="tab" id="tab3" aria-controls="panel3" aria-selected="false" tabindex="-1">Tab 3</button>
+  </div>
+
+  <div role="tabpanel" id="panel1" aria-labelledby="tab1">
+    <p>Content for Tab 1</p>
+  </div>
+  <div role="tabpanel" id="panel2" aria-labelledby="tab2" hidden>
+    <p>Content for Tab 2</p>
+  </div>
+  <div role="tabpanel" id="panel3" aria-labelledby="tab3" hidden>
+    <p>Content for Tab 3</p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
