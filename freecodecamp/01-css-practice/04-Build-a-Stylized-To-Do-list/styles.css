@@ -1,0 +1,44 @@
+body {
+    background-color: aliceblue;
+}
+
+.header-main-container {
+    background-color: white;
+    width: fit-content;
+    padding: 1rem;
+    border-radius: 10%;
+    margin: auto auto;
+}
+
+h1 {
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: red;
+}
+
+a:active {
+    color: aquamarine;
+}
+
+a:visited {
+    color: blue;
+}
+
+a:hover {
+    color: blueviolet;
+}
+
+a:focus {
+    border: 1px solid black;
+}
+
+.todo-list {
+    list-style: none;
+}
+
+.sub-item {
+    list-style-type: square;
+}
